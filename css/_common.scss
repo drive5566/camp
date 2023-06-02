@@ -1,0 +1,538 @@
+@font-face{
+    font-family:"Noto Sans TC-bold";
+    src: url(/font/NotoSansTC-Bold.otf)
+}
+@font-face{
+font-family:"Noto Sans TC-reg" ;
+src:url(/font/NotoSansTC-Regular.otf);
+}
+
+
+h1,
+h2,
+h3{
+    font-family:"Noto Sans TC-bold" ;
+    font-weight: 900;
+    line-height: 120%;
+    color: #fff;
+
+}
+
+
+p,
+span,
+li{
+    font-family:"Noto Sans TC-reg" ;
+    line-height: 150%;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+a{
+    color: #fff;
+    font-family: 'Noto Sans TC-reg';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+}
+
+.wrap{
+    max-width: 1296px; 
+    margin: 0 auto;
+}
+
+body{
+    background-color: #000;
+}
+
+// header區域開始
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+
+
+
+}
+
+.logo {
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+
+.menu {
+    display: flex;
+
+    li {
+        width: 32px;
+        margin: 20px 0 20px 20px;
+
+    }
+
+    .menu-img {
+        display: none;
+    }
+}
+
+
+.container-header{
+    animation:fadein 2s ;
+}
+
+
+.container-header h2 {
+    font-size: 120px;
+}
+
+
+
+.header-start {
+    width: 160px;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+    overflow: hidden;
+
+
+    a {
+        display: block;
+        padding: 20px 40px;
+        font-size: 19px;
+        line-height: 120%;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+
+    }
+}
+
+.header-animation {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+
+    img:nth-child(3) {
+        width: 13%;
+        animation: move 5s infinite;
+        
+
+    }
+    img:nth-child(2){
+        width: 13%;
+        animation: move 5s infinite;
+        animation-delay: .4s;
+
+    }
+    img:nth-child(1){
+        width: 13%;
+        animation: move 5s infinite;
+        animation-delay: .6s;
+
+    }
+}
+
+// header結束
+
+// fotter區域開始
+.footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-size: 80px;
+        }
+    }
+
+    .fotter-img {
+        width: 245px;
+    }
+}
+
+.footer-bot {
+    color: #fff;
+    padding: 32px 0;
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+        .nav {
+            flex-grow: 1;
+            display: flex;
+            gap: 10px;
+
+
+        }
+    }
+
+    .go-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        
+            &::after {
+                content: '';
+                background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/arrow%20upward.png?raw=true") no-repeat;
+                background-size: contain;
+                width: 16px;
+                height: 16px;
+                margin-left: 12px;
+               
+            }
+        
+
+    }
+}
+// footer結束
+
+// 卡片區域開始
+.container_card {
+    max-width: 1920px;
+    padding: 160px 312px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 160px;
+
+}
+
+.container_card .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+
+}
+
+
+.container_card .card-group .card {
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2F2F2;
+
+}
+
+
+.container_card .card-group .card .card__img {
+    overflow: hidden;
+}
+
+.card__content {
+    padding: 20px 32px;
+    flex-grow: 1;
+}
+
+.card__content h2 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 120%;
+    color: #000;
+
+}
+
+
+.container_card .card-group .card img {
+    max-width: 100%;
+    vertical-align: middle;
+    transition: 1s;
+
+}
+
+.card:hover img {
+    transform: scale(120%);
+
+}
+
+
+.card_text {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: "Noto Sans TC-reg";
+    color: #000;
+
+
+}
+
+
+
+div[class^="column"] {
+    padding: 20px 32px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+
+
+.card-group .column_top {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.card-group .column_top h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+
+}
+
+
+
+
+.card-group .column_bot {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.card-header {
+    margin-bottom: 80px;
+
+    h2 {
+        color: #000;
+        font-size: 80px;
+        text-align: center;
+    }
+}
+
+.card-search {
+    position: relative;
+
+    input {
+        width: 100%;
+        height: 64px;
+        background: #F2F2F2;
+        border-radius: 16px;
+        border-style: none;
+        padding-left: 76px;
+        font-size: 16px;
+    }
+
+    img {
+        position: absolute;
+        top: 23px;
+        left: 43px;
+        color: #919191;
+        width: 17px;
+        height: 17px;
+
+    }
+}
+
+.container-card-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 40px 0;
+    align-items: center;
+    overflow: hidden;
+
+    .card-nav-btn {
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+
+        p {
+            display: block;
+            color: #000;
+            padding: 20px 12px 20px 40px;
+        }
+
+        &::after {
+            content: '';
+            background: url("/主線二/img/Filter alt.png") no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 16px;
+            padding-right: 32px;
+        }
+
+    }
+
+    .card-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        p {
+            padding: 8px 16px;
+            color: #919191;
+            font-weight: 400;
+
+
+        }
+
+        .card-nac-style {
+            font-weight: 700;
+            background-color: #F2F2F2;
+            border-radius: 16px;
+            color: #020202;
+            transition: all .3s;
+        }
+
+    }
+
+    .card-drop {
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        p {
+            display: block;
+            color: #000;
+            padding: 20px 12px 20px 40px;
+        }
+
+        &::after {
+            content: '';
+            background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/keyboard%20arrow%20down.png?raw=true") no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 16px;
+            padding-right: 32px;
+        }
+    }
+
+}
+
+.container-card-page {
+
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: end;
+
+
+
+
+    .card-page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 308px;
+        cursor: pointer;
+
+        li {
+            width: 15%;
+            margin: 5px;
+        }
+
+        p {
+            text-align: center;
+            color: #000;
+            display: block;
+            padding: 12px 0;
+            border-radius: 16px;
+
+   
+
+        }
+        .card-page-style{
+            color: #fff;
+            background-color: #000;
+        }
+
+    }
+
+
+    img {
+        margin-left: 20px;
+
+    }
+
+
+}
+
+@media(max-width:375px){
+    .footer .footer-left a{
+        font-size: 48px;
+    }
+    .footer-bot{
+        .footer-menu {
+            flex-wrap: wrap;
+            gap: 12px;
+                .nav{
+                    order: 1;
+                    margin-left: 0;
+                }
+            }
+    }
+
+    .container-point{
+        .point{
+            display: block;
+        }
+    }
+
+    .header-animation {
+        img:nth-child(n) {
+            width: 33%;
+        }
+    }
+}
+// 卡片區域結束
+
+// 動畫
+@keyframes move{
+    0%{
+        transform: translateY(200px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+
+}
+
+// 頁面動畫
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}

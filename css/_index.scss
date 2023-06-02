@@ -1,0 +1,329 @@
+
+
+.container-ourServe {
+    margin-top: 160px;
+}
+
+.ourServe-content {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.ourServe-content-right {
+    width: 67%;
+    font-size: 48px;
+}
+
+.ourServe-content-left {
+    width: 32%;
+    font-size: 32px;
+    margin-right: 24px;
+}
+
+.ourServe-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourServe-card-item {
+    width: 32%;
+    border: 1px solid #525252;
+    border-radius: 16px;
+    padding: 80px 40px;
+        &:hover{
+        box-shadow: .5px .5px .5px .5px rgba(255,255,255,.5);
+        transform: scale(103%);
+        transition: .5s;
+    }
+}
+
+.ourServe-card-item h3 {
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+.ourServe-card-item p {
+    font-weight: 400;
+
+}
+
+.container-cooperate {
+    margin: 160px 0;
+}
+
+.cooperate-header {
+    font-size: 32px;
+    margin-bottom: 80px;
+}
+
+.cooperate-logo {
+    display: flex;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cooperate-mask {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100,000000+100&0.65+5,0.65+5,0+33,0+72,0.65+95,0.65+95 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 5%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.65) 95%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 5%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.65) 95%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 5%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.65) 95%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#a6000000', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.cooperate-card {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperate-card-item {
+    width: 32%;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-point {
+    margin-top: 24px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .point {
+        width: 8px;
+        height: 8px;
+        background-color: #525252;
+        ;
+        border-radius: 50%;
+        display: none;
+    }
+
+    .point-style {
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+
+.stars {
+    display: flex;
+}
+
+.cooperate-card-item p {
+    margin-bottom: 20px;
+
+}
+
+.user img {
+    float: left;
+    margin-right: 16px;
+}
+
+.user h3 {
+    margin-bottom: 4px;
+}
+
+.card {
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+
+}
+
+.container-build-service {
+    max-width: 1296px;
+    margin-top: 78px ;
+    text-align: center;
+
+    h3 {
+        font-size: 48px;
+    }
+
+    .start-btn {
+        display: flex;
+        align-items: center;
+        border: 1px solid #FFFFFF;
+        border-radius: 16px;
+        width: 188px;
+        margin: 40px auto;
+        position: relative;
+        &::after{
+            content: '';
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/call%20made.png?raw=true) no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            margin-right: 32px;
+
+        }
+
+
+        a {
+            font-size: 20px;
+            padding: 20px 40px;
+            padding-right: 12px;
+
+
+        }
+
+
+    }
+}
+
+
+
+
+@media (max-width:375px) {
+    .logo {
+        width: 147px;
+
+    }
+
+    .menu {
+
+        .menu-index,
+        .menu-pricing {
+            display: none;
+        }
+
+        .menu-img {
+            display: block;
+        }
+    }
+
+    .container-header h2 {
+        font-size: 48px;
+    }
+
+    .header-animation {
+        img {
+            width: 33%;
+        }
+    }
+
+    .header-start {
+        margin-bottom: 180px;
+    }
+
+    .wrap {
+        padding: 0 12px;
+    }
+
+
+    .ourServe-content {
+        flex-direction: column;
+        justify-content: start;
+
+        h2 {
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+
+    .ourServe-content-right {
+        margin-top: 24px;
+
+        width: 100%;
+
+        h3 {
+            font-size: 32px;
+        }
+    }
+
+    .ourServe-card {
+
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .ourServe-card-item {
+
+            width: 100%;
+        }
+    }
+
+    .container-cooperate {
+        margin-top: 120px;
+
+        .cooperate-header {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    .cooperate-card {
+        overflow: hidden;
+
+        .cooperate-card-item {
+            width: 100%;
+            flex-shrink: 0;
+
+        }
+
+    }
+
+    .container_card {
+        padding: 80px 12px;
+        border-radius: 20px;
+
+        .card-header h2 {
+            font-size: 32px;
+
+        }
+
+    }
+
+    .container_card  .card-group{
+
+        .card{
+            width: 100%;
+        }
+    }
+
+    .container-card-nav{
+        flex-wrap: wrap;
+        .card-nav{
+            margin-top:16px ;
+            order: 1;
+            flex-shrink: 0;
+        }
+    }
+
+    .container-build-service{
+        h3{
+            font-size: 32px;
+        }
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        .footer-left{
+        margin-top: 40px;
+
+            h2{
+                font-size: 48px;
+            }
+        }
+    }
+
+
+
+
+}

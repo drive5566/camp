@@ -1,0 +1,320 @@
+.header-text {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 238px;
+    margin-top: 80px;
+
+    p {
+        font-size: 48px;
+        width: 636px;
+        font-weight: 900;
+    }
+}
+
+.header-animation {
+    justify-content: start;
+}
+
+
+// 定價區域
+.pricinh-header {
+    margin: 80px 0;
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.contauner-pricing{
+    margin-bottom: 160px;
+}
+.pricing-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .card {
+        border: 1px solid #525252;
+        border-radius: 16px;
+        width: 49%;
+        padding: 20px 32px;
+        display: flex;
+        flex-direction: column;
+        height: 312px;
+        transition: 1s;
+
+        &:hover{
+            box-shadow: 1px 1px 1px 1px rgba(255,255,255,);
+            // transition: 1s;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom:12px ;
+        }
+
+        .list {
+            list-style: disc;
+            color: #fff;
+            flex-grow: 1;
+            li{
+                margin-left: 20px;
+                line-height: 150%;
+            }
+        }
+        .pricing-card-bot{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #525252;
+            p{
+                display: inline;
+            }
+            span{
+                color: #919191;
+            }
+            .btn{
+                display: flex;
+                align-items: center;
+                &::after{
+                    content: '';
+                    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/call%20made.png?raw=true');
+                    background-size: contain;
+                    width:  16px;
+                    height: 16px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+}
+// 定價區域結束
+
+// 使用規範區域
+.container-rule{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    h2{
+        font-size: 32px;
+    }
+    .rule-list{
+        li{
+            border-bottom: 1px solid #525252;
+            margin-bottom: 40px;
+        }
+        h3{
+            font-size: 48px;
+        }
+        p{
+            font-size: 32px;
+            margin-top: 24px;
+            margin-bottom: 40px;
+            line-height: 120%;
+        }
+    }
+
+}
+// 使用規範區域結束
+
+// 常見問題區域
+.container-question{
+    display: flex;
+    justify-content: space-between;
+    margin: 160px 0;
+    h2{
+        font-size: 32px;
+    }
+    .question-list{
+        width: 66%;
+        li{
+            border: 1px solid #525252;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+
+            img{
+                width: 24px;
+                height: 24px;
+                margin: 20px;
+                margin-left: 40px;
+            }
+        }
+        h3{
+            font-size: 48px;
+        }
+        p{
+            font-size: 20px;          
+            line-height: 120%;
+            padding: 20px 0;
+
+        }
+        [class^=drap-text]{
+            display: none;
+
+
+        }
+        .question-list-text{
+            transition: 3s;
+
+        }
+
+
+    }
+
+}
+
+
+// 常見問題區域結束
+
+@media(max-width:375px){
+    .wrap {
+        padding: 0 12px;
+    }
+    .logo {
+        width: 147px;
+
+    }
+
+    .menu {
+
+        .menu-index,
+        .menu-pricing {
+            display: none;
+        }
+
+        .menu-img {
+            display: block;
+        }
+    }
+
+    .container-header h2 {
+        font-size: 48px;
+    }
+
+    .header-animation {
+        img:nth-child(n) {
+            width: 33%;
+        }
+    }
+
+    .header-start {
+        margin-bottom: 180px;
+    }
+
+    .header-text p{
+        font-size: 28px;
+        width: 257px;
+    }
+
+    .pricinh-header h2{
+        font-size: 20px;
+    }
+
+    .contauner-pricing{
+
+        .card{
+            width: 100%;
+        }
+    } 
+
+    .container-rule{
+        flex-direction: column;
+
+        .rule-header{
+            h2{
+                margin-bottom:48px ;
+                font-size: 20px;
+            }
+        }
+        .rule-list{
+            h3{
+                font-size:32px ;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+
+    .container_card {
+        padding: 80px 12px;
+        border-radius: 20px;
+
+        .card-header h2 {
+            font-size: 32px;
+
+        }
+
+    }
+
+    .container_card  .card-group{
+
+        .card{
+            width: 100%;
+        }
+    }
+
+    .container-card-nav{
+        flex-wrap: wrap;
+        .card-nav{
+            margin-top:16px ;
+            order: 1;
+            flex-shrink: 0;
+        }
+    }
+
+    .container-build-service{
+        h3{
+            font-size: 32px;
+        }
+    }
+
+    .container-question{
+        flex-direction: column;
+        .question-list{
+            width: 100%;
+            li{
+                margin-bottom:16px;
+                &::before{
+                    margin-left:20px;
+                    flex-shrink: 0; 
+                }
+            }
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        .footer-left{
+        margin-top: 40px;
+
+            h2{
+                font-size: 48px;
+            }
+        }
+    }
+
+    .footer-bot{
+        .footer-menu {
+            flex-wrap: wrap;
+            gap: 24 px;
+                .nav{
+                    order: 1;
+                    margin-left: 0;
+                }
+            }
+    }
+
+    .container-point{
+        .point{
+            display: block;
+        }
+    }
+}
