@@ -2,9 +2,13 @@ let cardGroup = document.querySelector('.card-group')
 let worksData
 let worksData1
 axios.get('https://2023-engineer-camp.zeabur.app/api/v1/works').then(function(res){
-    worksData = res.data.ai_works.data[1];
-    worksData1 = res.data.ai_works.data[0];
-   console.log(worksData);
+    worksData = res.data.ai_works.data[0];
+    worksData1 = res.data.ai_works.data[1];
+    worksData2 = res.data.ai_works.data[2];
+    worksData3 = res.data.ai_works.data[3];
+    worksData4 = res.data.ai_works.data[4];
+    worksDataAll = res.data.ai_works.data;
+   console.log(worksDataAll);
 
 let works = 
 `<li class="card">
@@ -50,6 +54,78 @@ alt="聊天">
 <div class="column_bot">
 <p class="card_text">#${worksData1.type}</p>
 <a href='${worksData1.link}'>
+    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true" alt="">
+</a>
+</div>
+</li>
+
+<li class="card">
+<div class="card__img">
+<img src="${worksData2.imageUrl}"
+alt="聊天">
+</div>
+
+<div class="card__content ">
+<h2>${worksData2.title}</h2>
+<p class="card_text">${worksData2.description}
+</p>
+
+</div>
+<div class="column_top ">
+<h2>AI模型</h2>
+<span class="card_text">${worksData2.model}</span>
+</div>
+<div class="column_bot">
+<p class="card_text">#${worksData2.type}</p>
+<a href='${worksData2.link}'>
+    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true" alt="">
+</a>
+</div>
+</li>
+
+<li class="card">
+<div class="card__img">
+<img src="${worksData3.imageUrl}"
+alt="聊天">
+</div>
+
+<div class="card__content ">
+<h2>${worksData3.title}</h2>
+<p class="card_text">${worksData3.description}
+</p>
+
+</div>
+<div class="column_top ">
+<h2>AI模型</h2>
+<span class="card_text">${worksData3.model}</span>
+</div>
+<div class="column_bot">
+<p class="card_text">#${worksData3.type}</p>
+<a href='${worksData3.link}'>
+    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true" alt="">
+</a>
+</div>
+</li>
+
+<li class="card">
+<div class="card__img">
+<img src="${worksData4.imageUrl}"
+alt="聊天">
+</div>
+
+<div class="card__content ">
+<h2>${worksData4.title}</h2>
+<p class="card_text">${worksData4.description}
+</p>
+
+</div>
+<div class="column_top ">
+<h2>AI模型</h2>
+<span class="card_text">${worksData4.model}</span>
+</div>
+<div class="column_bot">
+<p class="card_text">#${worksData4.type}</p>
+<a href='${worksData4.link}'>
     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/share.png?raw=true" alt="">
 </a>
 </div>
@@ -128,6 +204,8 @@ for(i = 0;i < pp.length; i++){
 let question_list = document.querySelector('.question-list')
 let drap_text = document.querySelectorAll('.drap-text')
 let li = question_list.querySelectorAll('li')
+let add = question_list.querySelectorAll('.add')
+let reduce = question_list.querySelectorAll('.reduce')
 let flag = true
 
 for (let i = 0; i < drap_text.length; i++) {
@@ -138,9 +216,13 @@ for (let i = 0; i < drap_text.length; i++) {
     return function() {
       if (flag) {
         drap_text[index].style.display = 'block';
+        add[index].style.display = 'none';
+        reduce[index].style.display = 'block';
         flag = false;
       } else {
         drap_text[index].style.display = 'none';
+        add[index].style.display = 'block';
+        reduce[index].style.display = 'none';
         flag = true;
       }
     };

@@ -140,6 +140,10 @@
                 height: 24px;
                 margin: 20px;
                 margin-left: 40px;
+                transition: 1s;
+            }
+            .reduce{
+                display: none;
             }
         }
         h3{
